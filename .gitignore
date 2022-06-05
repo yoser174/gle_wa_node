@@ -1,0 +1,7 @@
+node_modules/
+_private_note/
+session/
+tes_gmail_ls.js
+tes.js
+test_gmail_oauth.js
+.env

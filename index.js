@@ -43,10 +43,12 @@ client.initialize();
 const authRoute = require("./components/auth");
 const chatRoute = require("./components/chatting");
 const contactRoute = require("./components/contact");
+const mailerRoute = require("./components/mailer");
 
 app.use("/auth", authRoute);
 app.use("/chat", chatRoute);
 app.use("/contact", contactRoute);
+app.use("/mailer", mailerRoute);
 
 app.listen(port, () => {
     console.log("Server Running Live on Port : " + port);
