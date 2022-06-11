@@ -42,10 +42,10 @@ router.post('/sendpdf', async (req,res) => {
         res.send(JSON.stringify({ success:false, message: "Eihter not ready or not valid phone and base64/url of pdf" }))
     } else {
         if (base64regex.test(pdf)) {
-            let media = new MessageMedia('application/pdf', pdf,filename);
+            let media = new MessageMedia('application/pdf', pdf),filename;
             client.sendMessage(`${phone}@c.us`, media).then((response) => {
                 if (response.id.fromMe) {
-                    res.send(JSON.stringify({ success:true, message: `MediaMessage successfully sent to ${phone}` }))
+                    res.send(JSON.stringify({ success:false, message: `MediaMessage successfully sent to ${phone}` }))
                 }
             });
         } else if (vuri.isWebUri(pdf)) {

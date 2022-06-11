@@ -70,7 +70,7 @@ router.post('/sendmailpdf', async (req, res) => {
             from: process.env.EMAIL,
             attachments: attachments,
         }).then(() => {
-            res.send(JSON.stringify({ success: true, message: `Mail message successfully sent to ${to}` }, null, 4));
+            res.send(JSON.stringify({ success: true, message: `Message successfully sent to ${to}` }, null, 4));
         }).catch((reason) => {
             res.send(JSON.stringify({ success: false, message: `${reason}` }, null, 4));
         });

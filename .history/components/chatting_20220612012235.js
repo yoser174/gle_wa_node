@@ -45,7 +45,7 @@ router.post('/sendpdf', async (req,res) => {
             let media = new MessageMedia('application/pdf', pdf,filename);
             client.sendMessage(`${phone}@c.us`, media).then((response) => {
                 if (response.id.fromMe) {
-                    res.send(JSON.stringify({ success:true, message: `MediaMessage successfully sent to ${phone}` }))
+                    res.send(JSON.stringify({ success:false, message: `MediaMessage successfully sent to ${phone}` }))
                 }
             });
         } else if (vuri.isWebUri(pdf)) {
