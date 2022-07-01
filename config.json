@@ -5,9 +5,9 @@
         "path":""
     },
     "oauth2" : {
-        "email" : "ciremai.labs@gmail.com",
-        "refresh_token" : "1//04_53g0kpyqisCgYIARAAGAQSNwF-L9Irt3kd669xykVqMB_nPPfqmxANl0gXo5kYVYQmz1M7ypgVQlirHEdQqfuaibNeT_CWJxk",
-        "client_secret" : "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",
-        "client_id" : "684712888354-bbe02sf4ustkhkve0fqoud1mnedatdpp.apps.googleusercontent.com"
+        "email" : "cxxxx@gmail.com",
+        "refresh_token" : "<refresh_token>",
+        "client_secret" : "<client_secret>",
+        "client_id" : "<client_id>"
     }
 }
